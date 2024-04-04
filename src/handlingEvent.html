@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Example</title>
+</head>
+<body>
+
+<!--INI MERUPAKAN CONTOH HTML DARI HANDLING EVENT BUTTON-->
+<h1>Contoh Penggunaan Tombol</h1>
+<button onclick="alert('Tombol diklik!')">Klik Saya</button><br>
+
+<!--INI MERUPAKAN CONTOH HTML DARI HANDLING EVENT INPUT FIELD-->
+<h1>Contoh Penggunaan Input Field</h1>
+<input type="text" onchange="console.log('Input berubah:', this.value)" /><br>
+
+<!--INI MERUPAKAN CONTOH HTML DARI HANDLING EVENT HOVER TEXT-->
+<h1>Contoh Penggunaan Hover Text</h1>
+<div oncontextmenu="alert('Menu kontekstual dipicu!')">Klik kanan di sini.</div><br>
+
+<!--INI MERUPAKAN CONTOH HTML DARI HANDLING EVENT TOGGLE BUTTON-->
+<h1>Contoh Penggunaan Toggle Button</h1>
+<ul id="parent-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
+<script>
+    document.getElementById('parent-list').addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI') {
+            console.log('Anda mengklik item:', event.target.textContent);
+        }
+    });
+</script>
+</body>
+</html>

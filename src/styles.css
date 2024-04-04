@@ -1,0 +1,22 @@
+/* styles.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+.Button,
+.InputField,
+.HoverText,
+.ToggleButton {
+    margin-bottom: 10px;
+}
